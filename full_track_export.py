@@ -32,7 +32,7 @@ for dir in dirlist:
             keyList = carobj.keys()
             for key in keyList:
                 if key in carobj.keys():
-                    addString += (str(carobj[key]) + ",").encode("ascii", 'ignore').decode('ascii', 'ignore').strip()
+                    addString += (str(carobj[key]).replace(",", "") + ",").encode("ascii", 'ignore').decode('ascii', 'ignore').strip()
             wrFile.write(str(addString) + "," + str(filepath))
             wrFile.write("\n")
         else:

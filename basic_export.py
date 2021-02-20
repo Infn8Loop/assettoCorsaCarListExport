@@ -1,5 +1,8 @@
 # This version only exports the name, brand, and class into your file. 
-
+# Pop this file into your Assetto Corsa 'content' folder. 
+# enter a command prompt in the same folder
+# run 'python export_car_list.py' 
+# the CSV file outputs to the same directory - just import it into your favorite spreadsheet software
 
 import json
 import os

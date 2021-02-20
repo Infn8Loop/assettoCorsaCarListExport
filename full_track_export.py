@@ -11,11 +11,11 @@ def validateJSON(jsonData):
 
 dirlist = glob.glob("./tracks/*")
 
-wrFile = open("basicTrackList.csv", 'w')
+wrFile = open("trackList.csv", 'w')
 
-wrFile.write("name,description,length,pitboxes,\n")
+wrFile.write("")
 wrFile.close()
-wrFile = open("basicTrackList.csv", 'a')
+wrFile = open("trackList.csv", 'a')
 
 
 for dir in dirlist:
@@ -28,8 +28,8 @@ for dir in dirlist:
         if validateJSON(jsonstr):
             print(filepath + " is valid")
             carobj = json.loads(jsonstr)
-            keyList = ["name", "description", "length", "pitboxes"]
-            # keyList = carobj.keys()
+            # keyList = ["name", "brand", "class"]
+            keyList = carobj.keys()
             for key in keyList:
                 if key in carobj.keys():
                     addString += (str(carobj[key]) + ",").encode("ascii", 'ignore').decode('ascii', 'ignore').strip()

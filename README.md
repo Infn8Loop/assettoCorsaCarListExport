@@ -4,9 +4,12 @@ Scans all of your Assetto Corsa cars and tracks and outputs spreadsheets with al
 
 *HOW TO USE*
 
-Copy the zip file of this repository into your content folder
+Copy the zip file of this repository into your assetto corsa content folder
 
-run the 'export_ui_data.bat' file. 
+Get Python!   ( I recommend using anaconda 3) but any install of python version 3 should work...  
 
-The exported files should appear in your 'content' folder
+*SET THE PYTHON PATH IN THE RUN_THIS.BAT File!*
 
+*RUN THE RUN_THIS.BAT FILE* 
+
+*That's it!*

@@ -19,7 +19,7 @@ dirlist = glob.glob("./cars/*")
 
 wrFile = open("basicCarList.csv", 'w')
 
-wrFile.write("")
+wrFile.write("name,brand,class\n")
 wrFile.close()
 wrFile = open("basicCarList.csv", 'a')
 
